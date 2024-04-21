@@ -7,7 +7,7 @@ interface ContainerProps {
 }
 
 const Container: React.FC<ContainerProps> = ({
-    children 
+    children  
 }) => {
     return (
     <div className="
@@ -15,8 +15,8 @@ const Container: React.FC<ContainerProps> = ({
         mx-auto
         xl:px-20
         md:px-10
-        sm:px-3
-        px-4
+        sm:px-2
+        px-3
     "
     
     

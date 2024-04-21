@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Nunito } from "next/font/google";
+import Navbar from "./components/navbar/Navbar";
+
 const inter = Inter({ subsets: ["latin"] });
 const font  = Nunito({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -17,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <Navbar />
+        {children}
+        </body>
     </html>
   );
 }
