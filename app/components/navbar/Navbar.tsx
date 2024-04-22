@@ -1,3 +1,5 @@
+'use client';
+
 //import { Container } from "postcss";
 import Container from "../Container";
 import Logo from "./Logo";
