@@ -1,7 +1,10 @@
 'use client';
 
-import { FieldErrors, FieldValues, UseFormRegister } from "react-hook-form";
-import { BiDollar } from "react-icons/bi";
+import { FieldErrors, 
+         FieldValues, 
+         UseFormRegister 
+} from "react-hook-form";
+import { BiDollar } from 'react-icons/bi';
 
 interface InputProps{
     id: string;
@@ -63,7 +66,22 @@ const Input: React.FC<InputProps> = ({
                     ${errors[id] ? 'focus-border-rose-500' : 'focus:border-black'}
                 `}
             />
+                <label
+                    className={`
+                        absolute
+                        text-md
+                        duration-150
+                        transform
+                        -translate-y-3
+                        top-5
+                        z-10
+                        origin-[0]
+                        ${formatPrice ? 'left-9' : 'left-4'}
 
+                    `}
+                >
+                    {label}
+                </label>
         </div> 
     );
 }
